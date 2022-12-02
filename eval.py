@@ -37,7 +37,10 @@ def main(eval_stock, window_size, model_name, debug):
 
     # Single Model Evaluation
     if model_name is not None:
-        agent = Agent(window_size, pretrained=True, model_name=model_name)
+        if model_name == "random":
+            agent = Agent(window_size, pretrained=True, strategy="uniform-rand")
+        else:
+            agent = Agent(window_size, pretrained=True, model_name=model_name)
         profit, _ = evaluate_model(agent, data, window_size, debug)
         show_eval_result(model_name, profit, initial_offset)
         

@@ -30,17 +30,41 @@ def train_model(agent, episode, data, ep_count=100, batch_size=32, window_size=1
         # select an action
         action = agent.act(state)
 
+        # # BUY
+        # if action == 1:
+        #     agent.inventory.append(data[t])
+
+        # # SELL
+        # elif action == 2 and len(agent.inventory) > 0:
+        #     bought_price = agent.inventory.pop(0)
+        #     delta = data[t] - bought_price
+        #     reward = delta #max(delta, 0)
+        #     total_profit += delta
+
+        # # HOLD
+        # else:
+        #     pass
+
+        if 1 <= action <= 10:
+            ac = "BUY"
+            shares = action
+        elif 11 <= action <= 20:
+            ac = "SELL"
+            shares = action - 10
+        else:
+            ac = "HOLD"
+
         # BUY
-        if action == 1:
-            agent.inventory.append(data[t])
-
+        if ac == "BUY":
+            for _ in range(shares):
+                agent.inventory.append(data[t])
         # SELL
-        elif action == 2 and len(agent.inventory) > 0:
-            bought_price = agent.inventory.pop(0)
-            delta = data[t] - bought_price
-            reward = delta #max(delta, 0)
-            total_profit += delta
-
+        elif ac == "SELL" and len(agent.inventory) >= shares:
+            for _ in range(shares):
+                bought_price = agent.inventory.pop(0)
+                delta = data[t] - bought_price
+                reward += delta #max(delta, 0)
+                total_profit += delta
         # HOLD
         else:
             pass
@@ -76,25 +100,38 @@ def evaluate_model(agent, data, window_size, debug):
         # select an action
         action = agent.act(state, is_eval=True)
 
-        # BUY
-        if action == 1:
-            agent.inventory.append(data[t])
+        if 1 <= action <= 10:
+            ac = "BUY"
+            shares = action
+        elif 11 <= action <= 20:
+            ac = "SELL"
+            shares = action - 10
+        else:
+            ac = "HOLD"
 
-            history.append((data[t], "BUY"))
+        # BUY
+        if ac == "BUY":
+            for _ in range(shares):
+                agent.inventory.append(data[t])
+
+            history.append((data[t], "BUY", shares))
             if debug:
-                logging.debug("Buy at: {}".format(format_currency(data[t])))
+                logging.debug("Buy at: {} | Shares: {}".format(format_currency(data[t]), shares))
         
         # SELL
-        elif action == 2 and len(agent.inventory) > 0:
-            bought_price = agent.inventory.pop(0)
-            delta = data[t] - bought_price
-            reward = delta #max(delta, 0)
-            total_profit += delta
+        elif ac == "SELL" and len(agent.inventory) >= shares:
+            current_profit = 0.0
+            for _ in range(shares):
+                bought_price = agent.inventory.pop(0)
+                delta = data[t] - bought_price
+                reward += delta #max(delta, 0)
+                current_profit += delta
+                total_profit += delta
 
-            history.append((data[t], "SELL"))
+            history.append((data[t], "SELL", shares))
             if debug:
-                logging.debug("Sell at: {} | Position: {}".format(
-                    format_currency(data[t]), format_position(data[t] - bought_price)))
+                logging.debug("Sell at: {} | Shares: {} | Position: {} ".format(
+                    format_currency(data[t]), shares, format_position(current_profit)))
         # HOLD
         else:
             history.append((data[t], "HOLD"))

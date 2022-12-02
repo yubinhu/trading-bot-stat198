@@ -29,11 +29,14 @@ class Agent:
     """ Stock Trading Bot """
 
     def __init__(self, state_size, strategy="t-dqn", reset_every=1000, pretrained=False, model_name=None):
+        # strategy in ["dqn", "t-dqn", "double-dqn", "uniform-rand"]
         self.strategy = strategy
 
         # agent config
         self.state_size = state_size    	# normalized previous days
-        self.action_size = 3           		# [sit, buy, sell]
+        self.action_size = 21           		# [sit, buy, sell]
+                                            # [-10, -9, -8, ..., 9, 10]
+                                            # [0,   1,  2,  ..., 19,20]
         self.model_name = model_name
         self.inventory = []
         self.memory = deque(maxlen=10000)
@@ -85,13 +88,17 @@ class Agent:
     def act(self, state, is_eval=False):
         """Take action from given possible set of actions
         """
+        if self.strategy == "uniform-rand":
+            return random.randrange(self.action_size)
+
         # take random action in order to diversify experience at the beginning
         if not is_eval and random.random() <= self.epsilon:
             return random.randrange(self.action_size)
 
-        if self.first_iter:
-            self.first_iter = False
-            return 1 # make a definite buy on the first iter
+        # We got rid of this logic because it seems arbitrary
+        # if self.first_iter:
+        #     self.first_iter = False
+        #     return 1 # make a definite buy on the first iter
 
         action_probs = self.model.predict(state)
         return np.argmax(action_probs[0])
@@ -160,7 +167,8 @@ class Agent:
 
                 X_train.append(state[0])
                 y_train.append(q_values[0])
-                
+        elif self.strategy == "uniform-rand":
+            return 0
         else:
             raise NotImplementedError()
 
@@ -182,3 +190,4 @@ class Agent:
 
     def load(self):
         return load_model("models/" + self.model_name, custom_objects=self.custom_objects)
+
