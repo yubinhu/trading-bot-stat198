@@ -36,11 +36,13 @@ def show_eval_result(model_name, profit, initial_offset):
         logging.info('{}: {}\n'.format(model_name, format_position(profit)))
 
 
-def get_stock_data(stock_file):
+def get_stock_data(stock_file, split=False):
     """Reads stock data from csv file
     """
     df = pd.read_csv(stock_file)
-    return list(df['Adj Close'])
+    if not split:
+        return list(df['Adj Close'])
+    return list(df['Adj Close'])[:-200], list(df['Adj Close'])[-200:]
 
 
 def switch_k_backend_device():

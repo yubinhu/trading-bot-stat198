@@ -32,7 +32,9 @@ def main(eval_stock, window_size, model_name, debug):
 
     Args: [python eval.py --help]
     """    
+    print(eval_stock)
     data = get_stock_data(eval_stock)
+    print(data[0])
     initial_offset = data[1] - data[0]
 
     # Single Model Evaluation

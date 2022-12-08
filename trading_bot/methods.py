@@ -108,7 +108,6 @@ def evaluate_model(agent, data, window_size, debug):
             shares = action - 10
         else:
             ac = "HOLD"
-
         # BUY
         if ac == "BUY":
             for _ in range(shares):
