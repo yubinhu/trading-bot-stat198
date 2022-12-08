@@ -1,0 +1,150 @@
+2022-12-07 11:47:07 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 QQQ dqn-TSLA 0
+2022-12-07 11:47:15 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 QQQ dqn-TSLA -588.9582270000005
+2022-12-07 11:47:24 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 QQQ dqn-TSLA -166.47381800000028
+2022-12-07 11:47:32 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 QQQ dqn-TSLA 0
+2022-12-07 11:47:41 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 QQQ dqn-TSLA 0
+2022-12-07 11:47:50 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 QQQ t-dqn-TSLA -5832.938130000003
+2022-12-07 11:48:00 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 QQQ t-dqn-TSLA -219.40308799999934
+2022-12-07 11:48:10 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 QQQ t-dqn-TSLA 3.389739000000361
+2022-12-07 11:48:20 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 QQQ t-dqn-TSLA 0
+2022-12-07 11:48:31 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 QQQ t-dqn-TSLA 0
+2022-12-07 11:48:42 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 QQQ double-dqn-TSLA -744.5490239999991
+2022-12-07 11:48:53 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 QQQ double-dqn-TSLA 0
+2022-12-07 11:49:05 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 QQQ double-dqn-TSLA 0
+2022-12-07 11:49:18 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 QQQ double-dqn-TSLA 0
+2022-12-07 11:49:30 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 QQQ double-dqn-TSLA 0
+2022-12-07 11:49:43 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 QQQ t-dqn-AAPL -710.9791220000022
+2022-12-07 11:49:57 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 QQQ t-dqn-AAPL -7974.839426999995
+2022-12-07 11:50:10 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 QQQ t-dqn-AAPL -9960.382602999973
+2022-12-07 11:50:25 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 QQQ t-dqn-AAPL -15401.017671999996
+2022-12-07 11:50:39 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 QQQ t-dqn-AAPL 2089.2887640000035
+2022-12-07 11:50:54 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 QQQ t-dqn-QQQ -6602.084104000012
+2022-12-07 11:51:10 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 QQQ t-dqn-QQQ -10207.534014999988
+2022-12-07 11:51:26 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 QQQ t-dqn-QQQ -14084.06378900001
+2022-12-07 11:51:42 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 QQQ t-dqn-QQQ 802.8413460000033
+2022-12-07 11:51:59 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 QQQ t-dqn-QQQ -203.32366099999973
+2022-12-07 11:52:16 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 TSLA dqn-TSLA 0
+2022-12-07 11:52:33 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 TSLA dqn-TSLA -492.9861139999996
+2022-12-07 11:52:52 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 TSLA dqn-TSLA -407.6066880000003
+2022-12-07 11:53:10 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 TSLA dqn-TSLA 0
+2022-12-07 11:53:29 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 TSLA dqn-TSLA 0
+2022-12-07 11:53:48 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 TSLA t-dqn-TSLA -5510.3764599999995
+2022-12-07 11:54:07 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 TSLA t-dqn-TSLA -1315.9666550000002
+2022-12-07 11:54:27 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 TSLA t-dqn-TSLA 83.97006600000003
+2022-12-07 11:54:48 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 TSLA t-dqn-TSLA 0
+2022-12-07 11:55:09 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 TSLA t-dqn-TSLA 0
+2022-12-07 11:55:31 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 TSLA double-dqn-TSLA -336.7500529999985
+2022-12-07 11:55:53 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 TSLA double-dqn-TSLA 0
+2022-12-07 11:56:15 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 TSLA double-dqn-TSLA 0
+2022-12-07 11:56:37 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 TSLA double-dqn-TSLA 0
+2022-12-07 11:57:00 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 TSLA double-dqn-TSLA 0
+2022-12-07 11:57:23 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 TSLA t-dqn-AAPL -1110.995992999997
+2022-12-07 11:57:47 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 TSLA t-dqn-AAPL 243.88403900000364
+2022-12-07 11:58:12 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 TSLA t-dqn-AAPL -2383.8629099999966
+2022-12-07 11:58:37 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 TSLA t-dqn-AAPL -2953.7419340000038
+2022-12-07 11:59:03 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 TSLA t-dqn-AAPL 373.1366349999993
+2022-12-07 11:59:29 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 TSLA t-dqn-QQQ -7492.24951700001
+2022-12-07 11:59:56 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 TSLA t-dqn-QQQ -5493.248586999999
+2022-12-07 12:00:24 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 TSLA t-dqn-QQQ -4701.171606000007
+2022-12-07 12:00:51 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 TSLA t-dqn-QQQ -410.903018
+2022-12-07 12:01:18 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 TSLA t-dqn-QQQ -363.70002099999977
+2022-12-07 12:01:47 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 AAPL dqn-TSLA 0
+2022-12-07 12:02:16 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 AAPL dqn-TSLA -92.99189299999904
+2022-12-07 12:02:46 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 AAPL dqn-TSLA -77.68905199999989
+2022-12-07 12:03:16 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 AAPL dqn-TSLA 0
+2022-12-07 12:03:46 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 AAPL dqn-TSLA 0
+2022-12-07 12:04:17 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 AAPL t-dqn-TSLA -1435.5902230000006
+2022-12-07 12:04:48 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 AAPL t-dqn-TSLA -130.985973
+2022-12-07 12:05:20 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 AAPL t-dqn-TSLA -141.72960599999996
+2022-12-07 12:05:52 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 AAPL t-dqn-TSLA 0
+2022-12-07 12:06:25 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 AAPL t-dqn-TSLA 0
+2022-12-07 12:06:58 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 AAPL double-dqn-TSLA 986.4808059999982
+2022-12-07 12:07:32 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 AAPL double-dqn-TSLA 0
+2022-12-07 12:08:06 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 AAPL double-dqn-TSLA 0
+2022-12-07 12:08:40 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 AAPL double-dqn-TSLA 0
+2022-12-07 12:09:16 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 AAPL double-dqn-TSLA 0
+2022-12-07 12:09:52 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 AAPL t-dqn-AAPL 77.11716999999928
+2022-12-07 12:10:29 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 AAPL t-dqn-AAPL -2128.687036000001
+2022-12-07 12:11:06 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 AAPL t-dqn-AAPL -1506.4735659999994
+2022-12-07 12:11:43 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 AAPL t-dqn-AAPL -4109.571187999999
+2022-12-07 12:12:21 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 AAPL t-dqn-AAPL 1132.2992560000007
+2022-12-07 12:13:01 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+10 AAPL t-dqn-QQQ -393.341292000002
+2022-12-07 12:13:41 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+20 AAPL t-dqn-QQQ 223.63701199999863
+2022-12-07 12:14:23 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+30 AAPL t-dqn-QQQ -2354.894584999999
+2022-12-07 12:15:05 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+40 AAPL t-dqn-QQQ 51.48926299999988
+2022-12-07 12:15:47 victors-mbp-16.lan root[22603] DEBUG switching to TensorFlow for CPU
+50 AAPL t-dqn-QQQ 117.35112299999994
